@@ -6,9 +6,9 @@ const ratingClassName = (ratingStr) => {
 
   if( rating > 90 ){
     return "veryHigh";
-  }else if( rating > 80 ){
-    return "high";
   }else if( rating > 70 ){
+    return "high";
+  }else if( rating > 50 ){
     return "medium";
   }else if( rating <= 50 ){
     return "low";
@@ -46,11 +46,13 @@ export default class GameCard extends Component {
       </div>
     }
 
+    let url = game.url;
+    url = url.replace(/www/, "next");
 
     return (
       <div className="card">
         <div className="title">
-          <a href={game.url}>
+          <a href={url} target="_blank">
             <h3>{game.name}</h3>
           </a>
           { ratingHTML }
