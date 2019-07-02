@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Wendy+One&display=swap');
+
+body{
+  font-family: 'Lato', sans-serif;
+}
+
+h1{
+  font-family: 'Wendy One', sans-serif;
+  font-size: 3rem;
+}
+
 a{
   color: #457A92;
   text-decoration: none;

@@ -14,7 +14,7 @@
     }
   },
   "src/lib/components/Home.react.js": {
-    "description": "",
+    "description": "Homepage",
     "displayName": "Home",
     "methods": [
       {

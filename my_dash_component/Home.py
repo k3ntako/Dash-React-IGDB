@@ -5,7 +5,7 @@ from dash.development.base_component import Component, _explicitize_args
 
 class Home(Component):
     """A Home component.
-
+Homepage
 
 Keyword arguments:
 - game (dict; optional): The game info that will be displayed"""
