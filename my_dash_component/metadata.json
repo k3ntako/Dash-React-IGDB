@@ -1,0 +1,38 @@
+{
+  "src/lib/components/GameCard.react.js": {
+    "description": "Each card displayed",
+    "displayName": "GameCard",
+    "methods": [],
+    "props": {
+      "game": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "The game info that will be displayed"
+      }
+    }
+  },
+  "src/lib/components/Home.react.js": {
+    "description": "",
+    "displayName": "Home",
+    "methods": [
+      {
+        "name": "renderGames",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      }
+    ],
+    "props": {
+      "game": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "The game info that will be displayed"
+      }
+    }
+  }
+}

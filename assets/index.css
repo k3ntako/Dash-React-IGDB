@@ -1,0 +1,58 @@
+a{
+  color: #457A92;
+  text-decoration: none;
+}
+a:hover{
+  color: #003C57;
+}
+
+.cardsGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.card{
+  padding: 1rem;
+  box-shadow: 0 0px 10px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+
+.card > .title{
+  display: flex;
+  justify-content: space-between;
+}
+.card > .title > h3{
+  margin-top: 0;
+}
+
+.rating{
+  border-radius: 50px;
+  padding: 0.5rem;
+  width: 30px;
+  height: 30px;
+}
+.veryHigh{
+  background-image: linear-gradient(limegreen, green);
+}
+.high{
+  background-image: linear-gradient(yellow, red);
+}
+.medium{
+  background-image: linear-gradient(#f9d052, #c77f05);
+}
+.low{
+  background-image: linear-gradient(red, black);
+}
+
+@media screen and (max-width: 800px){
+  .cardsGrid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .cardsGrid{
+    grid-template-columns: 1fr;
+  }
+}
