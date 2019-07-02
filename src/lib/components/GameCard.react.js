@@ -33,9 +33,19 @@ export default class GameCard extends Component {
     const game = this.props.game;
 
     const rating = Math.floor(game.rating);
-    const ratingHTML = game.rating && <span className={"rating " + ratingClassName(rating)}>
-      { rating }
-    </span>;
+    let ratingHTML, ratingCount;
+    if( rating ){
+      ratingHTML = <div className={"rating " + ratingClassName(rating)}>
+        <span>
+          { rating }
+        </span>
+      </div>;
+
+      ratingCount = <div>
+        Rating Count: { game.rating_count }
+      </div>
+    }
+
 
     return (
       <div className="card">
@@ -45,14 +55,9 @@ export default class GameCard extends Component {
           </a>
           { ratingHTML }
         </div>
-        <div>
-          Rating: { rating }/100
-        </div>
-        <div>
-          Rating Count: { game.rating_count }
-        </div>
+        { ratingCount }
         <p>
-          { game.storyline }
+          { game.storyline || "No description." }
         </p>
       </div>
     );
