@@ -35,7 +35,7 @@ If you have selected install_dependencies during the prompt, you can skip this p
     $ pip install -r tests/requirements.txt
     ```
 
-### Write your component code in `src/lib/components/Home.react.js`. 
+### Write your component code in `src/lib/components/Home.react.js`.
 
 - The demo app is in `src/demo` and you will import your example component code into your demo app.
 - Test your code in a Python environment:
@@ -91,3 +91,12 @@ If you have selected install_dependencies during the prompt, you can skip this p
     1. Publish this repository to GitHub
     2. Tag your GitHub repository with the plotly-dash tag so that it appears here: https://github.com/topics/plotly-dash
     3. Create a post in the Dash community forum: https://community.plot.ly/c/dash
+
+
+### Resources:
+  - [Plotly: React for Python Developers: a primer](https://dash.plot.ly/react-for-python-developers)
+  - [Plotly: Deploying Dash Apps](https://dash.plot.ly/deployment)
+  - [Plotly: Dash Dev Tools](https://dash.plot.ly/devtools)
+  - [Heroku: Getting Started on Heroku with Python](https://devcenter.heroku.com/articles/getting-started-with-python)
+  - [Youtube: Webinar: Converting React components to Dash components](https://www.youtube.com/watch?v=wifoPPRgG_I)
+  - [IGDB.com API Docs](https://api-docs.igdb.com/)
